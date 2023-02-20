@@ -1,0 +1,21 @@
+@import "../abstract/variables.scss";
+.title {
+  font-size: 1.5rem;
+  color: $NeonGreen;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  margin-bottom: 5rem;
+}
+.detail {
+  font-size: 3rem;
+  color: $LightCyan;
+  text-align: center;
+  margin-bottom: 5rem;
+  height: 10rem;
+   @media screen and (max-width: $breakpoint-mobile) {
+      font-size: 4rem;
+      height: 8rem;
+      
+  }
+}

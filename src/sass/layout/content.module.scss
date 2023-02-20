@@ -1,0 +1,48 @@
+@import "../abstract/variables.scss";
+.container {
+  width: 50rem;
+  height: 30rem;
+  background-color: $DarkGrayishBlue;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  position: relative;
+   @media screen and (max-width: $breakpoint-mobile) {
+      width:100vw;
+      padding:unset;
+      height: 54rem;
+  }
+}
+.imgBase {
+  display: block;
+  margin: unset;
+  margin: 0 auto;
+   @media screen and (max-width:$breakpoint-mobile) {
+      width: 100%;
+      position:absolute;
+
+      bottom:6.4rem;
+      margin:unset;
+  }
+}
+.circle {
+  display: block;
+  border-radius: 50%;
+  background-color: $NeonGreen;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerButton {
+  cursor: pointer;
+  position: absolute;
+  bottom: -2.5rem;
+  left: calc(50% - 2.5rem);
+  transition:box-shadow .4s ease-in-out;
+  box-shadow: 0 0 0 0 ;
+  border-radius: 50%;
+  &:hover {
+    box-shadow:0 0 2.4rem 1.4rem $NeonGreen;
+  }
+}
