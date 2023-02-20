@@ -14,7 +14,7 @@ export const Advice = () => {
       const response = await getInfo();
       const { advice, id } = response.slip;
       setAdvice({ id, advice });
-    })(); 
+    })();
   }, []);
 
   const handleGetAdvice = async () => {
